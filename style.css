@@ -1,0 +1,63 @@
+body {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100vh !important;
+    min-width: 100vw !important;
+    background-image: url("images/buildings.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div#inputs {
+    margin: auto;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: white;
+    padding: 25px;
+    width: fit-content;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+}
+
+label {
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+img {
+    margin: auto;
+}
+
+p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+hr {
+    
+    width: 100%;
+    background-color: black;
+}
+
+img {
+    height: 100%;
+    min-width: 100vw !important;
+}

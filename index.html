@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHANGE BACKGROUND PHOTOS with RADIO INPUTS - coded by Vedat Sözen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="inputs">
+
+<label>Buildings</label>
+<input type="radio" id="input1" name="radio">
+<hr>
+
+<label>Mountains</label>
+<input type="radio" id="input2" name="radio">
+<hr>
+
+<label>Camping</label>
+<input type="radio" id="input3" name="radio">
+<hr>
+
+<label>Tiger</label>
+<input type="radio" id="input4" name="radio">
+
+<p>You can change background by selecting any radio input </p>
+
+</div>
+
+<script>
+
+var input1 = document.getElementById("input1");
+var input2 = document.getElementById("input2");
+var input3 = document.getElementById("input3");
+var input4 = document.getElementById("input4");
+
+// Event listener ekleyerek radio butonlarının değişikliklerini dinleyebilirsiniz.
+input1.addEventListener("change", function() {
+    if (input1.checked) {
+        document.body.style.backgroundImage = "url('images/buildings.jpg')";
+        document.body.style.backgroundSize = "100% 100%;";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundPosition = "center";
+    }
+});
+
+input2.addEventListener("change", function() {
+    if (input2.checked) {
+        document.body.style.backgroundImage = "url('images/mountains.jpg')";
+        document.body.style.backgroundSize = "100% 100%;";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundPosition = "center";
+    }
+});
+
+input3.addEventListener("change", function() {
+    if (input3.checked) {
+        document.body.style.backgroundImage = "url('images/camping.jpg')";
+        document.body.style.backgroundSize = "auto 100%;";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundPosition = "top-left";
+    }
+});
+
+input4.addEventListener("change", function() {
+    if (input4.checked) {
+        document.body.style.backgroundImage = "url('images/tiger.jpg')";
+        document.body.style.backgroundSize = "auto 100%;";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundPosition = "top-left";
+    }
+});
+</script>
+</body>
+</html>
